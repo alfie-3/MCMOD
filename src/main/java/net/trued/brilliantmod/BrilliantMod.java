@@ -17,8 +17,7 @@ public class BrilliantMod implements ModInitializer {
 
 	@Override
 	public void onInitialize(ModContainer mod) {
-		ModItems.RegisterItems();
-		ModItemGroup.registerModItemGroups();
 		ModBlocks.reigsterModBlocks();
+		ModItems.registerModItems();
 	}
 }

@@ -1,4 +1,7 @@
 {
   "item.brilliant_mod.sillyium" : "Sillyium",
+  "item.brilliant_mod.sillyium_hammer" : "Sillyium Hammer",
+  "item.brilliant_mod.sillyium_sword" : "Sillyium Sword",
   "block.brilliant_mod.sillyium_block" : "Block of Sillyium"
+
 }

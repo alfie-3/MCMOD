@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "brilliant_mod:item/sillyium_sword"
+  }
+}

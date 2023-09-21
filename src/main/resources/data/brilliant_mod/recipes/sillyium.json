@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "brilliant_mod:sillyium_block"
+    }
+  ],
+  "result": {
+    "item": "brilliant_mod:sillyium",
+    "count": 9
+  }
+}

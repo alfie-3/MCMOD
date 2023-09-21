@@ -33,6 +33,6 @@ public class ModBlocks {
 	}
 
 	public  static void reigsterModBlocks() {
-
+	BrilliantMod.LOGGER.info("Registering Blocks");
 	}
 }

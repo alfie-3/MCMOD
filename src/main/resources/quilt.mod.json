@@ -20,8 +20,8 @@
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
 			"init": "net.trued.brilliantmod.BrilliantMod",
-			"client":
-				"net.trued.brilliantmod.BrilliantModClient"
+			"client": "net.trued.brilliantmod.BrilliantModClient",
+			"fabric-datagen": "net.trued.brilliantmod.datagen.ModDataGeneration"
 		},
 
 		"depends": [

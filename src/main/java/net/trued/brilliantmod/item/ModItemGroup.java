@@ -14,18 +14,18 @@ import net.minecraft.util.Identifier;
 import net.trued.brilliantmod.BrilliantMod;
 
 public class ModItemGroup {
-	public static final ItemGroup ITEM_GROUP = FabricItemGroup.builder()
+	public static final ItemGroup ITEM_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(BrilliantMod.MOD_ID, "items"), FabricItemGroup.builder()
 		.icon(() -> new ItemStack(ModItems.SILLYIUM))
 		.name(Text.literal("Items"))
-		.build();
-
-	public static void registerModItemGroups(){
-		Registry.register(Registries.ITEM_GROUP, new Identifier(BrilliantMod.MOD_ID, "items"), ITEM_GROUP);}
+		.build());
 
 	public  static  void registerItemGroup(Item item, String itemGroup){
 	ItemGroupEvents.modifyEntriesEvent(RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(BrilliantMod.MOD_ID, itemGroup))).register(content ->
-		content.addItem(item)
-		);
+		content.addItem(item));
+	}
+
+	public  static  void registerItemGroups(){
+		BrilliantMod.LOGGER.info("Registering Groups");
 	}
 }
 
